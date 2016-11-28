@@ -2,10 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Backbone from 'backbone'
 import init from './init'
+import StopLightView from '../view/stopLightView'
 
 
 const app = function() {
-  document.querySelector('.container').innerHTML = "<h1>Woah!</h1>"
+  ReactDOM.render(<StopLightView/>, document.querySelector('.container'))
 }
 
 // x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..
